@@ -46,7 +46,20 @@ display: block;
 width: fit-content;
 font-size: 4rem;
 position: relative;
-color: white;
+color: transparent;
+animation: text_reveal .5s ease forwards;
+animation-delay: 1s;
+}
+
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease; 
+
 }
 
 #hero .cta{
@@ -59,7 +72,8 @@ color: white;
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top:30px;
-    transition: .7s ease background-color;
+    transition: .7s ease;
+    transition-property: background-color,color;
 }
 
 #hero .cta:hover {
@@ -70,3 +84,21 @@ background-color: crimson;
 
 /* End of Hero Section*/
 
+
+@keyframes text_reveal_box {
+    50%{
+        width: 100%;
+        left:0
+    }
+
+   100%{
+    width: 0;
+    left:100%
+   } 
+}
+
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
