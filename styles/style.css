@@ -41,6 +41,15 @@ a{
     opacity: .7;
     z-index: -1;
 } 
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+
+}
+
+
 #hero h1{ /*Ta h1 που υπάγονται στο #hero */
 display: block;
 width: fit-content;
@@ -51,6 +60,17 @@ animation: text_reveal .5s ease forwards;
 animation-delay: 1s;
 }
 
+#hero h1:nth-child(1){
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(2){
+    animation-delay: 2.5s;
+}
+#hero h1:nth-child(3){
+    animation-delay: 3.5s;
+}
+
+
 #hero h1 span{
     position: absolute;
     top: 0;
@@ -60,6 +80,16 @@ animation-delay: 1s;
     background-color: crimson;
     animation: text_reveal_box 1s ease; 
 
+}
+
+#hero h1:nth-child(1) span{
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2) span{
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3) span{
+    animation-delay: 3s;
 }
 
 #hero .cta{
@@ -81,7 +111,6 @@ color: white;
 background-color: crimson;
 }
 
-
 /* End of Hero Section*/
 
 
@@ -102,3 +131,11 @@ background-color: crimson;
         color: white;
     }
 }
+
+
+
+#services .section-title span{
+    color:crimson;
+}
+
+/* 38:49 */
