@@ -37,6 +37,34 @@ p{
     align-items: center;
     justify-content: center;
 }
+
+.cta{
+    display: inline-block;
+    padding: 10px;
+    color: crimson;
+    background-color: transparent;
+    border:2px solid crimson;
+    font-size:2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top:30px;
+    transition: .7s ease;
+    transition-property: background-color,color;
+}
+
+.section-title span{
+    color:crimson;
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color:black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
 /*End of General Section */
 
 /* Hero Section*/
@@ -107,20 +135,6 @@ animation-delay: 1s;
 }
 #hero h1:nth-child(3) span{
     animation-delay: 3s;
-}
-
-#hero .cta{
-    display: inline-block;
-    padding: 10px;
-    color: crimson;
-    background-color: transparent;
-    border:2px solid crimson;
-    font-size:2rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin-top:30px;
-    transition: .7s ease;
-    transition-property: background-color,color;
 }
 
 #hero .cta:hover {
@@ -211,6 +225,8 @@ z-index: 1;
 }
 
 /*End of Services Section*/
+
+/*Projects Section*/
 #projects .projects{
     flex-direction: column;
     max-width: 1200px;
@@ -283,11 +299,67 @@ transition: .6s ease transform;
 #projects .project-item:hover .project-img img{
     transform: scale(1.1);
 }
-/*Projects Section*/
-
 
 /*End of Projects Section*/
 
+/*About Section*/
+#about .about{
+    flex-direction: column;
+    text-align: center;
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+#about .col-left{
+    width: 250px;
+    height:360px;
+}
+
+#about .col-right{
+    width: 100%;
+}
+
+#about .col-right h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p{
+    margin-bottom: 20px;
+}
+
+#about .col-right .cta{
+    color: black;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+
+#about .cta:hover {
+    color: white;
+    background-color: crimson;
+    }
+
+#about .col-left .about-img{
+    position: relative;
+    z-index: 1;
+}
+#about .col-left .about-img::after{
+    content: '';
+    position: absolute;
+    left: -43px;
+    top: 20px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid crimson;
+    z-index: -1;
+}
+
+
+/*End of About Section*/
 
 @keyframes text_reveal_box {
     50%{
@@ -309,8 +381,6 @@ transition: .6s ease transform;
 
 
 
-.section-title span{
-    color:crimson;
-}
+
 
 /* 1:22:01 */
