@@ -370,7 +370,7 @@ transition: .6s ease transform;
 }
 
 #contact .contact-items{
-    width: 100%;
+    width: 400px;
 }
 
 #contact .contact-item{
