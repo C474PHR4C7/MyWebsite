@@ -53,7 +53,13 @@ p{
 }
 
 .brand h1{
+font-size: 3rem;
+text-transform: uppercase;
+color:white;
+}
 
+.brand h1 span{
+    color:crimson;
 }
 
 .section-title span{
@@ -423,6 +429,26 @@ min-height: 200px;
 flex-direction: column;
 padding-top: 50px;
 padding-bottom: 10px;
+}
+
+#footer h2{
+    color: white;
+    font-weight: 500;
+    font-size:1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#footer .social-item{
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
 }
 
 /*End of Footer Section*/
