@@ -204,7 +204,7 @@ z-index: 1;
     height: 100%;
     width: 100%;
     background-color: white;
-    opacity: .8;
+    opacity: .9;
     z-index: -1;
 }
 
@@ -230,8 +230,9 @@ z-index: 1;
 
 #services .service-item p{
     text-align: left;
-    font-weight: 300;
-    letter-spacing: 0.2rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    font-size: 1.8rem;
 }
 
 /*End of Services Section*/
@@ -278,12 +279,21 @@ z-index: 1;
 #projects .project-info h1{
     font-size: 4rem;
     font-weight: 500;
+    color: white;
 }
 #projects .project-info h2{
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     font-weight: 500;
     margin-top: 10px;
+    color: white;
 }
+
+#projects .project-info p{
+    font-size: 1.7rem;
+    color: white;
+    letter-spacing: 0.1rem;
+}
+
 #projects .project-img{
     flex-basis: 50%;
     height: 300px;
@@ -514,11 +524,14 @@ padding-bottom: 10px;
         margin:2.5%;
     }
    
+    #projects .project-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
    
     #projects .project-item{
         height: 400px;
         margin:0;
-        width:100%;
+        width:95%;
         border-radius: 0;
         flex-direction: row;
     }
@@ -532,9 +545,6 @@ padding-bottom: 10px;
 
 } 
 /*End of Media*/
-
-
-
 
 
 
