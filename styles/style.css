@@ -472,6 +472,7 @@ padding-bottom: 10px;
 
 /*End of Footer Section*/
 
+/* Keyframes*/
 @keyframes text_reveal_box {
     50%{
         width: 100%;
@@ -484,11 +485,54 @@ padding-bottom: 10px;
    } 
 }
 
+
 @keyframes text_reveal{
     100%{
         color: white;
     }
 }
+/*End of Keyframes*/
+
+/*Media query for tablets*/
+@media only screen and (min-width:768px){
+
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    
+    h1.section-title{
+        font-size: 6rem;
+    }
+
+    #hero h1{
+        font-size: 7rem;
+    }
+
+    #services .service-bottom .service-item{
+        flex-basis: 45%;
+        margin:2.5%;
+    }
+   
+   
+    #projects .project-item{
+        height: 400px;
+        margin:0;
+        width:100%;
+        border-radius: 0;
+        flex-direction: row;
+    }
+
+    #projects .all-projects .project-info{
+        height: 100%;
+    }
+    #projects .all-projects .project-img{
+        height: 100%;
+    }
+
+} 
+/*End of Media*/
+
 
 
 
