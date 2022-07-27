@@ -81,7 +81,7 @@ color:white;
 /* Header Section*/
 #header{
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     left: 0;
     top: 0;
     width:100vw;
@@ -114,9 +114,56 @@ color:white;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index:1;
-    overflow-x:hidden;flex-direction: column;
+    z-index:1; 
+    overflow-x:hidden;
+    flex-direction: column;
 }
+
+#header .nav-list ul a{
+font-size: 2.5rem;
+font-weight: 500;
+letter-spacing: .2rem;
+color: white;
+text-transform: uppercase;
+padding: 20px;;
+display: block;
+}
+
+#header .nav-list ul a::after{
+content: attr(data-after);
+position: absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%) scale(0);
+color:rgb(245,240,250,0.04);
+font-size: 10rem;
+letter-spacing: 50px;
+z-index:-1;
+transition: .3s ease letter-spacing;
+}
+
+#header .nav-list ul li:hover a::after{
+    transform:translate(-50%,-50%) scale(1);
+    letter-spacing: initial;
+}
+
+#header .hamburger{
+    
+    height: 60px;
+    width:60px;
+    display:inline-block;
+    border:3px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index:100;
+    position: relative;
+    margin-right: 20px;
+    
+    
+}
+
 
 
 /* End of Header Section*/
