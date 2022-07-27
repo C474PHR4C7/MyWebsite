@@ -77,6 +77,51 @@ color:white;
 
 /*End of General Section */
 
+
+/* Header Section*/
+#header{
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width:100vw;
+    height:auto;
+}
+
+#header .header{
+    min-height: 8vh;
+    background-color: rgba(30, 30, 30, 0.25);
+}
+
+.header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    width: 100%;
+    height: 100%;
+    max-width:1300px;
+    padding: 0 10px;
+}
+
+#header .nav-list ul{
+    list-style: none;
+    position: absolute;
+    background-color: rgba(30, 30, 30);
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+    overflow-x:hidden;flex-direction: column;
+}
+
+
+/* End of Header Section*/
+
+
 /* Hero Section*/
 #hero{
     background-image: url(../img/Alan.jpg);
@@ -647,9 +692,3 @@ padding-left: 20px;
 
 }/* End of Media query for Monitors*/
 
-
-
-
-
-
-/* 2:16:36 */
