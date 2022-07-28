@@ -9,6 +9,7 @@
 html{
     font-size: 10px;
     font-family:'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a{
@@ -800,7 +801,30 @@ padding-left: 20px;
     margin:1.5%;
 }
 
+#header .hamburger{
+    display: none;
+}
+
+#header .nav-list ul{
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+}
+
+#header .nav-list ul li{
+    display:inline-block
+}
+
+#header .nav-list ul li a{
+font-size: 1.8rem;
+}
+
+#header .nav-list ul a::after{
+display: none;
+}
+
 
 }/* End of Media query for Monitors*/
 
-/*3.21.43*/
